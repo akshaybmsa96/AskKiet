@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"></include>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.example.akki.prou.ViewQuestions">
+
+
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:elevation="5dp"
+        android:background="@drawable/recbound"
+        android:padding="10dp"
+        android:hint="Search Topics"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:id="@+id/sedittext" />
+    <ListView
+        android:layout_marginTop="5dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:id="@+id/listviewid"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="0.5dp"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/sedittext"></ListView>
+
+
+</RelativeLayout>
+</LinearLayout>
